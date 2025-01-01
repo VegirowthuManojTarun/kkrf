@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Section */
+.header-container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  color: white;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.nav-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  padding-top: 10px;
+}
+
+.logo {
+  height: 10px;
+  width: 120px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.who-we-are-hover-cont,
+.what-we-do-hover-cont,
+.industries-cont {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  background-color: #202020;
+  color: white;
+  z-index: 10;
+}
+
+.who-we-are-hover-cont {
+  margin-left: -80px;
+  margin-top: 15px;
+  height: 300px;
+  padding: 40px;
+  padding-top: 50px;
+}
+
+.who-we-are-hover-cont.active,
+.what-we-do-hover-cont.active,
+.industries-cont.active {
+  display: flex;
+}
+
+.who-we-are-hover-cont {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.who-we-are-hover-cont a,
+.what-we-do-hover-cont a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.who-we-are-hover-cont p {
+  color: grey;
+  padding-top: 10px;
+}
+
+.what-we-do-hover-cont {
+  margin-left: 140px;
+  margin-top: 15px;
+  height: 500px;
+  padding: 40px;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.what-we-do-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.what-we-do-margin {
+  margin-top: -40px;
+}
+
+.what-we-do-head {
+  font-size: 24px !important;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.what-we-do-anchor-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.what-we-do-anchor-div h1 {
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.what-we-do-anchor-div a {
+  padding-bottom: 5px;
+}
+
+.what-we-do-head-icon {
+  width: 35px;
+  text-align: center;
+  font-size: 1px;
+  border-radius: 2px;
+}
+
+.industries-cont {
+  height: 500px;
+  padding: 10px;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+
+.industries-cont a {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
+  font-size: 18px;
+}
+
+.industries-cont div div {
+  margin-bottom: 10px;
+}
+
+/* Hero Section */
+
+/* General Carousel Styling */
+.custom-carousel-item {
+  min-height: 90vh; /* Ensure each slide takes up 90% of the viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Individual Slides with Background Images */
+
+/* Overlay for Better Text Visibility */
+.custom-carousel-item .ms-5 {
+  /* Semi-transparent overlay for text readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-bg {
+  background-image: url("assests/img-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+}
+
+.experience {
+  background-image: linear-gradient(to right, rgb(2, 40, 70), rgb(27, 61, 88));
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
