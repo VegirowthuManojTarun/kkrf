@@ -1,9 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 body {
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 
 /* Navbar Section */
+.nav-content {
+  top: 5rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1;
+  opacity: 1;
+  display: none;
+}
+.
+
+
+/* Desktop Hover Effect */
+.nav-item-hover:hover ~ .nav-content {
+  display: flex !important;
+}
+
+/* Mobile Touch Interaction */
+@media (hover: none) {
+  .nav-content {
+    display: none; /* Hidden by default on mobile */
+  }
+
+  .nav-item-hover:active ~ .nav-content,
+  .nav-item-hover:focus ~ .nav-content {
+    display: flex !important; /* Display on touch interaction */
+    flex-direction: column; /* Adjust layout for better mobile experience */
+  }
+}
+
 .header-container {
   background-color: black;
   display: flex;
@@ -151,7 +183,7 @@ body {
 
 /* General Carousel Styling */
 .custom-carousel-item {
-  min-height: 90vh; /* Ensure each slide takes up 90% of the viewport height */
+  min-height: 80vh; /* Ensure each slide takes up 90% of the viewport height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,20 +194,25 @@ body {
 /* Overlay for Better Text Visibility */
 .custom-carousel-item .ms-5 {
   /* Semi-transparent overlay for text readability */
-  padding: 20px;
   border-radius: 8px;
 }
 
-.hero-bg {
-  background-image: url("assests/img-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  color: white;
+.sap-partner-logo {
+  height: 5rem;
 }
 
-.experience {
-  background-image: linear-gradient(to right, rgb(2, 40, 70), rgb(27, 61, 88));
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+.azure-partner-logo {
+  height: 2rem;
+}
+.partner-logo {
+  height: 3rem;
+  margin-right: auto;
+}
+
+.statistics-content-section-numerics {
+  font-size: 2.5rem;
+}
+
+.statistics-content-section-partner-with-us-card {
+  height: 180px;
 }
