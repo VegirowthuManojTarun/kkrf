@@ -216,3 +216,49 @@ body {
 .statistics-content-section-partner-with-us-card {
   height: 180px;
 }
+
+@media screen and (max-width: 576px) {
+  .categories-section-heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+.categories-image-gallery {
+  height: 550px;
+}
+
+.our_services_cta {
+  background: grey
+    url(//appinventiv.com/wp-content/themes/twentynineteen-child/css/pages/../../new-images/our-services-cta.webp)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.navigation-section-card{
+  height: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation-section-card{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navigation-section-card{
+    height: 250px;
+  }
+}
+
+
+.our-services-btn{
+  background-color: black;
+  height: 40px;
+}

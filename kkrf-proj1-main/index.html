@@ -17,7 +17,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=smartphone" />
     <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
     <title>KKRF: A Leading Global Conglomerate Tech Firm</title>
   </head>
   <body>
@@ -666,7 +674,7 @@
 
     <section>
       <div class="container-fluid bg-light pt-5 px-lg-5 text-black">
-        <div
+         <div
           class="container align-items-md-center statistics-content-section py-5 px-lg-5"
         >
           <div class="row">
@@ -689,7 +697,7 @@
         </div>
 
         <!-- Numerics section -->
-        <!-- <div class="container-fluid flex-column flex-md-row p-md-3 px-lg-5">
+        <div class="container-fluid flex-column flex-md-row p-md-3 px-lg-5">
           <div class="row px-lg-4">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="border-start border-black px-4 py-3 mb-5">
@@ -776,150 +784,456 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div> 
       </div>
     </section>
 
     <!-- categories section -->
 
-    <section>
-      <div class="container-fluid py-5 bg-black text-light">
-        <h2 class="fw-medium fs-2">
-          Using an AI-First approach, we build intelligent and future-proof
-          digital solutions to transform companies.
+     <section class="bg-light p-lg-2">
+      <div
+        class="container-fluid py-5 px-3 px-lg-5 bg-black text-light rounded-4"
+      >
+        <h2 class="fw-medium mb-5 px-lg-5 categories-section-heading">
+          Using an AI-First approach, we build 
+          intelligent and future-proof digital 
+          solutions to transform companies.
         </h2>
-        <div class="mt-4 px-2" id="productEngineeringBtn">
-          <div class="d-flex">
-            <p class="fs-4">Product Engineering</p>
-            <div class="ms-auto icon-section ms-auto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-plus-square-fill"
-                viewBox="0 0 16 16"
+        <div class="container-fluid px-lg-5">
+          <div class="row">
+            <div class="col-12 col-lg-7">
+              <div
+                class="mt-4 rounded-1 rounded-bottom-4 bg-light"
+                id="productEngineeringOuter"
               >
-                <path
-                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
+                <div
+                  class="d-flex bg-dark px-3 pt-3 rounded-1 rounded-bottom-4"
+                  id="productEngineeringBtn"
+                >
+                  <p class="fs-4">Product Engineering</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i
+                      class="bi bi-dash-square-fill fs-2"
+                      id="productEngineeringIcon"
+                    ></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled bg-light fs-6 fw-medium rounded-bottom-4"
+                  id="productEngineering"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Digital Applications</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Mobile Engineering</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >IoT & Wearables Solutions</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Quality Engineering</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="mt-2 rounded-1 rounded-bottom-4"
+                id="digitalExperienceOuter"
+              >
+                <div
+                  class="d-flex bg-dark px-3 pt-3 rounded-1 digital-experience-btn"
+                  id="digitalExperienceBtn"
+                >
+                  <p class="fs-4">Digital Experience</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i
+                      class="bi bi-plus-square-fill fs-2"
+                      id="digitalExperienceIcon"
+                    ></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5 digital-experience-list"
+                  id="digitalExperience"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Product Strategy & Consulting</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Product Design</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Product Management</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-2 rounded-1 rounded-bottom-4" id="aimlOuter">
+                <div class="d-flex bg-dark px-3 pt-3 rounded-1" id="aimlBtn">
+                  <p class="fs-4">AI & ML</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i class="bi bi-plus-square-fill fs-2" id="aimlIcon"></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5"
+                  id="aiml"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Utilitarian AI</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Predictive Analytics</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Generative AI</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Machine Learning</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-2 rounded-1 rounded-bottom-4" id="sapOuter">
+                <div class="d-flex bg-dark px-3 pt-3 rounded-1" id="sapBtn">
+                  <p class="fs-4">SAP</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i class="bi bi-plus-square-fill fs-2" id="sapIcon"></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5"
+                  id="sap"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >S/4HANA Implementations</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >SAP AMS Support</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >SAP Automation</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >SAP Security & GRC</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >SAP Value Added Solutions</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Other SAP Implementations</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="mt-2 rounded-1 rounded-bottom-4"
+                id="dataScienceOuter"
+              >
+                <div
+                  class="d-flex bg-dark px-3 pt-3 rounded-1"
+                  id="dataScienceBtn"
+                >
+                  <p class="fs-4">Data Science & Engineering</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i
+                      class="bi bi-plus-square-fill fs-2"
+                      id="dataScienceIcon"
+                    ></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5"
+                  id="dataScience"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Data Engineering</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Data Science</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Visualization & Analytics</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Integration & API</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black">RPA</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-2 rounded-1 rounded-bottom-4" id="cloudOuter">
+                <div class="d-flex bg-dark px-3 pt-3 rounded-1" id="cloudBtn">
+                  <p class="fs-4">Cloud Engineering</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i class="bi bi-plus-square-fill fs-2" id="cloudIcon"></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5"
+                  id="cloud"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Cloud Consulting</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Cloud Migration</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Cloud Managed Services</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >DevSecOps</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-2 rounded-1 rounded-bottom-4" id="nexGenOuter">
+                <div class="d-flex bg-dark px-3 pt-3 rounded-1" id="nexGenBtn">
+                  <p class="fs-4">NexGen Services</p>
+                  <div class="ms-auto icon-section ms-auto">
+                    <i class="bi bi-plus-square-fill fs-2" id="nexGenIcon"></i>
+                  </div>
+                </div>
+                <ul
+                  class="list-unstyled d-none bg-light fs-6 fw-medium rounded-5"
+                  id="nexGen"
+                >
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Blockchain</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black">Web3</a>
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Metaverse</a
+                    >
+                  </li>
+                  <li class="px-4 pt-1">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Digital Signage Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-none col-lg-5 d-lg-inline">
+              <div class="ms-5 mt-3 rounded-5">
+                <img
+                  src="assets/categories/producteng.webp"
+                  class="categories-image-gallery rounded-5"
+                  id="productEngineeringImg"
+                  alt="Product Engineering"
                 />
-              </svg>
+                <img
+                  src="assets/categories/datascience.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="dataScienceImg"
+                  alt="Data Science"
+                />
+                <img
+                  src="assets/categories/aiml.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="aimlImg"
+                  alt="AI ML"
+                />
+                <img
+                  src="assets/categories/cloud.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="cloudImg"
+                  alt="Cloud"
+                />
+                <img
+                  src="assets/categories/sap.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="sapImg"
+                  alt="SAP"
+                />
+                <img
+                  src="assets/categories/nexgen.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="nexGenImg"
+                  alt="NexGen"
+                />
+                <img
+                  src="assets/categories/digitalexp.webp"
+                  class="categories-image-gallery rounded-5 d-none"
+                  id="digitalExperienceImg"
+                  alt="Digital Experience"
+                />
+              </div>
             </div>
           </div>
-          <ul class="list-unstyled d-none" id="productEngineering">
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Digital Applications</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Mobile Engineering</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >IoT & Wearables Solutions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Quality Engineering</a
-              >
-            </li>
-          </ul>
         </div>
-        <div class="mt-4 px-2" id="digitalExpertiseBtn">
-          <div class="d-flex">
-            <p class="fs-4">Digital Expertise</p>
-            <div class="ms-auto icon-section ms-auto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-plus-square-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
-                />
-              </svg>
-            </div>
-          </div>
-          <ul class="list-unstyled d-none" id="digitalExpertiseList">
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Digital Applications</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Mobile Engineering</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >IoT & Wearables Solutions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Quality Engineering</a
-              >
-            </li>
-          </ul>
+      </div>
+    </section> 
+
+    <!-- Navigation-section -->
+    <section>
+      <div class="container-fluid bg-black px-2 pt-4 pb-3 px-lg-5 text-light">
+        <div class="heading-section mt-4 mb-3 fw-medium">
+          <h2 class="fs-2 px-3 px-lg-2">
+            Navigate The Digital Frontier With Our Engineering Excellence
+          </h2>
         </div>
-        <div class="mt-4 px-2" id="aimlBtn">
-          <div class="d-flex">
-            <p class="fs-4">AI & ML</p>
-            <div class="ms-auto icon-section ms-auto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-plus-square-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
-                />
-              </svg>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none">
+                <div class="px-4 py-4 pt-lg-3 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                  <div class="mt-2 mt-lg-2">
+                    <span class="material-symbols-outlined fs-1">
+                      smartphone
+                      </span>
+                  </div>
+                  
+                  <p class="fw-medium fs-4 mt-3 mt-lg-2">Mobile App Development</p>
+                  <p class="fs-6 text-dark">
+                    We create user-friendly, responsive mobile apps designed to align with business goals and boost engagement.
+                  </p>
+              </div>
+            </a>
             </div>
-          </div>
-          <ul class="list-unstyled d-none" id="aimlList">
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Digital Applications</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Mobile Engineering</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >IoT & Wearables Solutions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none text-light"
-                >Quality Engineering</a
-              >
-            </li>
-          </ul>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 py-lg-2 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2 mt-lg-3">
+                  <!-- <i class="bi bi-file-earmark-code-fill fs-1"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M344-296 160-480l184-184 42 44-140 140 140 140-42 44Zm-144 30h60v76h440v-76h60v166q0 24-18 42t-42 18H260q-24 0-42-18t-18-42v-166Zm60-440h-60v-154q0-24 18-42t42-18h440q24 0 42 18t18 42v154h-60v-64H260v64Zm0 576v30h440v-30H260Zm0-700h440v-30H260v30Zm356 534-42-44 140-140-140-140 42-44 184 184-184 184ZM260-830v-30 30Zm0 700v30-30Z"/></svg>
+                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">Software Development</p>
+                <p class="fs-6 text-dark">
+                  From tailored development to upgrades, we build software that boosts efficiency and fosters innovation.
+                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 py-lg-2 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2">
+                  <i class="bi bi-bar-chart-line-fill fs-1"></i>
+                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">Digital Tranformation</p>
+                <p class="fs-6 text-dark">
+                  We enable businesses to stay ahead by upgrading legacy systems with innovative, growth-focused digital solutions.
+                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 py-lg-3 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2">
+                  <!-- <i class="bi bi-lightbulb-fill fs-1"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763l36 36q-49 47-76 111.5T130-480q0 71 27 135.5T233-233l-36 36Zm80-80q-38-38-62.5-91.5T190-480q0-58 24.5-111.5T277-683l35 35q-34 30-53 76t-19 92q0 46 19 92t53 76l-35 35Zm165-23q0-21-15-43t-32.5-45Q377-411 362-436.5T347-490q0-55 39-94t94-39q55 0 94 39t39 94q0 28-15 53.5T565.5-388Q548-365 533-343t-15 43h-76Zm-2 90v-50h80v50h-80Zm243-67-35-35q34-30 53-76t19-92q0-46-19-92t-53-76l35-35q38 38 62.5 91.5T770-480q0 58-24.5 111.5T683-277Zm80 80-36-36q49-47 76-111.5T830-480q0-71-27-135.5T727-727l36-36q54 54 85.5 127T880-480q0 83-31.5 156T763-197Z"/></svg>
+                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">Ideation And Design Strategy</p>
+                <p class="fs-6 text-dark">
+                  Through strategic ideation and design, we create digital products that are both highly functional and user-centric.
+                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2">
+                  <!-- <i class="bi bi-chat-left-fill fs-1"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="m417-433-36-36q8-11 12.5-23.23 4.5-12.24 4.5-25 0-12.77-4.5-25.27T381-565l36-36q17 18 25 39.5t8 44.5q0 23-8 44.5T417-433Zm72 72-36-36q24-29 35.5-59.06 11.5-30.06 11.5-61t-11.5-61.44Q477-609 453-637l36-36q32 36 47 75.26 15 39.27 15 80.74 0 41.17-15 80.58Q521-397 489-361ZM189.96-485Q159-485 137-507.04q-22-22.05-22-53Q115-591 137.04-613q22.05-22 53-22Q221-635 243-612.96q22 22.05 22 53Q265-529 242.96-507q-22.05 22-53 22ZM40-330v-13q0-21.08 11.41-38.65T83-408q25.08-10.52 51.6-16.26 26.53-5.74 55.46-5.74 28.94 0 55.42 5.74T297-408q20.18 8.78 31.59 26.35T340-343v13H40Zm729.96-155Q739-485 717-507.04q-22-22.05-22-53Q695-591 717.04-613q22.05-22 53-22Q801-635 823-612.96q22 22.05 22 53Q845-529 822.96-507q-22.05 22-53 22ZM620-330v-13q0-21.08 11.41-38.65T663-408q25.08-10.52 51.6-16.26 26.53-5.74 55.46-5.74 28.94 0 55.42 5.74T877-408q20.18 8.78 31.59 26.35T920-343v13H620Z"/></svg>                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">IT Consulting</p>
+                <p class="fs-6 text-dark mt-lg-2">
+                  We offer specialized IT consulting to guide your organization through complex tech choices, aligning strategies with business goals.
+                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2">
+                  <!-- <i class="bi bi-infinity fs-1"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M212-260q-90 0-151-65.5T0-482q0-90 61.5-154T212-700q36 0 69.5 12t59.5 37l93 90-42 42-89-87q-18-18-41.5-26t-49.5-8q-64 0-108 46.5T60-482q0 66 43.5 114T212-320q25 0 48.5-8t42.5-25l316-298q26-25 59.5-37t68.5-12q90 0 151.5 64T960-482q0 91-61.5 156.5T747-260q-35 0-69-11.5T619-308l-91-90 42-42 87 87q17 17 41 25t49 8q65 0 109-48t44-114q0-65-44.5-111.5T747-640q-25 0-48.5 9T657-605L341-307q-26 24-60 35.5T212-260Z"/></svg>
+                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">Devops</p>
+                <p class="fs-6 text-dark mt-lg-2">
+                  Our DevOps solutions optimize workflows, speeding up project delivery while enhancing overall product reliability and quality.
+                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="#" class="text-decoration-none"><div class="px-4 py-4 py-lg-2 mt-2 mt-md-4 bg-light text-black rounded-3 navigation-section-card">
+                <div class="mt-2 mt-lg-3">
+                  <!-- <i class="bi bi-cloud-fill fs-1"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="m412-279 230-230-40-40-189 189-100-100-41 41 140 140ZM251-160q-88 0-149.5-61.5T40-371q0-78 50-137t127-71q20-97 94-158.5T482-799q112 0 189 81.5T748-522v24q72-2 122 46.5T920-329q0 69-50 119t-119 50H251Zm0-60h500q45 0 77-32t32-77q0-45-32-77t-77-32h-63v-84q0-91-61-154t-149-63q-88 0-149.5 63T267-522h-19q-62 0-105 43.5T100-371q0 63 44 107t107 44Zm229-260Z"/></svg>
+                </div>
+                <p class="fw-medium fs-4 mt-3 mt-lg-2">Cloud Managed Services</p>
+                <p class="fs-6 text-dark">
+                  We manage your cloud infrastructure, ensuring security, optimization, and cost-efficiency to focus on strategy                </p>
+              </div></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="our_services_cta px-4 py-4 mt-2 mt-md-4 rounded-3 navigation-section-card">
+                <div class="our-services-btn rounded-3 px-3 py-2">
+                   <a href="#" target="_blank" class="text-white text-decoration-none">
+                    <span>Our Services</span>
+                    <svg width="16px" height="13px" viewBox="0 0 13 10"> 
+                      <polyline points="8 1 12 5 8 9" stroke="#fff" stroke-width="2" fill="none"></polyline> 
+                    </svg>
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
+      crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="categories.js"></script>
+    
   </body>
 </html>
