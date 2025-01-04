@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -15,24 +16,104 @@ body {
   opacity: 1;
   display: none;
 }
-.
+
+
+/* 
+@media screen and (max-width:576px) {
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+  }
+
+  .case-study-card-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 8%;
+    margin-left: 1px;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+
+  .case-study-card-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 8%;
+    margin-left: 3rem;
+  }
+
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+
+  .case-study-card-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 8%;
+    margin-left: 3rem;
+  }
+}
+
+
+
+
+.card-1 {
+  position: sticky;
+  z-index: 1;
+  top: 70px;
+}
+
+.card-2 {
+  position: sticky;
+  z-index: 2;
+  top: 160px;
+}
+
+.card-3 {
+  position: sticky;
+  z-index: 3;
+  top: 200px;
+}
+
+.card-4 {
+  position: sticky;
+  z-index: 4;
+  top: 200px;
+} */
 
 
 /* Desktop Hover Effect */
-.nav-item-hover:hover ~ .nav-content {
+.nav-item-hover:hover~.nav-content {
   display: flex !important;
 }
 
 /* Mobile Touch Interaction */
 @media (hover: none) {
   .nav-content {
-    display: none; /* Hidden by default on mobile */
+    display: none;
+    /* Hidden by default on mobile */
   }
 
-  .nav-item-hover:active ~ .nav-content,
-  .nav-item-hover:focus ~ .nav-content {
-    display: flex !important; /* Display on touch interaction */
-    flex-direction: column; /* Adjust layout for better mobile experience */
+  .nav-item-hover:active~.nav-content,
+  .nav-item-hover:focus~.nav-content {
+    display: flex !important;
+    /* Display on touch interaction */
+    flex-direction: column;
+    /* Adjust layout for better mobile experience */
   }
 }
 
@@ -183,7 +264,8 @@ body {
 
 /* General Carousel Styling */
 .custom-carousel-item {
-  min-height: 80vh; /* Ensure each slide takes up 90% of the viewport height */
+  min-height: 80vh;
+  /* Ensure each slide takes up 90% of the viewport height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,6 +279,9 @@ body {
   border-radius: 8px;
 }
 
+
+/* partner-section */
+
 .sap-partner-logo {
   height: 5rem;
 }
@@ -204,10 +289,14 @@ body {
 .azure-partner-logo {
   height: 2rem;
 }
+
 .partner-logo {
   height: 3rem;
   margin-right: auto;
 }
+
+
+/* statistics-content-section */
 
 .statistics-content-section-numerics {
   font-size: 2.5rem;
@@ -217,9 +306,19 @@ body {
   height: 180px;
 }
 
+
+/* categories-section */
+
 @media screen and (max-width: 576px) {
   .categories-section-heading {
     font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .categories-section-heading {
+    font-size: 40px;
     letter-spacing: 1px;
   }
 }
@@ -228,10 +327,10 @@ body {
   height: 550px;
 }
 
+
+/* our-services */
 .our_services_cta {
-  background: grey
-    url(//appinventiv.com/wp-content/themes/twentynineteen-child/css/pages/../../new-images/our-services-cta.webp)
-    no-repeat;
+  background: grey url(//appinventiv.com/wp-content/themes/twentynineteen-child/css/pages/../../new-images/our-services-cta.webp) no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 8px;
@@ -241,24 +340,201 @@ body {
   height: 300px;
 }
 
-.navigation-section-card{
+.our-services-btn {
+  background-color: black;
+  height: 40px;
+}
+
+.kickstart-section-card {
+  background-image: url('assets/img-hero-cropped.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .kickstart-section-card {
+    background-image: url('assets/img-hero.jpg');
+    background-size: cover;
+  }
+
+}
+
+/* Ai and globe section */
+
+.globe-image {
+  position: absolute;
+  bottom: -10rem;
+  right: -10rem;
+  z-index: 0;
+}
+
+.globe-overlay-heading {
+  position: absolute;
+  z-index: 1;
+}
+
+.globe-overlay-para {
+  top: 28%;
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 576px) {
+  .globe-overlay-heading {
+    margin-right: 20px;
+  }
+
+  .globe-overlay-para {
+    top: 28%;
+    position: absolute;
+    padding-right: 20px;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+.ai-section-content-card {
+  height: 366px;
+  padding: 30px 20px 10px;
+  overflow: hidden;
+  /* Hides parts outside the box */
+  position: relative;
+}
+
+.ai-section-content-card-para {
+  font-size: 13px;
+  font-family: sans-serif;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .ai-section-content-card-para {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  .ai-section-content-card {
+    height: 600px;
+    padding: 40px;
+  }
+
+  .ai-section-partner-card {
+    height: 196px;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+  .ai-section-content-card-para {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  .ai-section-content-card {
+    height: 490px;
+    padding: 40px;
+  }
+
+  .ai-section-partner-card {
+    height: 160px;
+  }
+}
+
+
+/* navigation section */
+
+@media screen and (max-width: 991px) {
+  .navigation-section-heading {
+    font-size: 26px;
+    padding: 0px;
+     !important
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+  .navigation-section-heading {
+    font-size: 42px;
+  }
+}
+
+.navigation-section-card {
   height: 300px;
 }
 
 @media screen and (max-width: 576px) {
-  .navigation-section-card{
+  .navigation-section-card {
     height: 250px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .navigation-section-card{
+  .navigation-section-card {
     height: 250px;
   }
 }
 
+/* --case study section */
 
-.our-services-btn{
-  background-color: black;
-  height: 40px;
+ul.no-padding {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  list-style: none !important;
+}
+
+.case-study-card {
+  position: sticky;
+  transition: all 0.3s ease-in-out;
+}
+
+.case-study-card img {
+  border-radius: 8%;
+}
+
+@media screen and (max-width: 576px) {
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+  }
+
+  .case-study-card-image {
+    height: 100px;
+    width: 100px;
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+
+  .case-study-card-image {
+    height: 300px;
+    width: 300px;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .case-study-card {
+    margin-top: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+
+  .case-study-card-image {
+    height: 400px;
+    width: 400px;
+    margin-left: 3rem;
+  }
 }
